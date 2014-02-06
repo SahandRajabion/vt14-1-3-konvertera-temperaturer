@@ -1,0 +1,69 @@
+﻿
+#ValidationSummary1 {color:red;
+}
+
+
+#RequiredFieldValidator {color:red;
+}
+
+
+#CompareValidator {color:red;
+}
+
+
+#RequiredFieldValidator1 {color:red;
+}
+
+
+#CompareValidator1 {color:red;
+}
+
+
+#CompareValidatorn {color:red;
+}
+
+
+#RequiredFieldValidator2 {color:red;
+}
+
+
+#CompareValidator2 {color:red;
+}
+
+
+#RangeValidator1 {color:red;
+}
+
+
+h1 { margin-left:691px;
+}
+
+#content {margin-left:800px;margin-top:20px;
+}
+
+#buttons {margin-top:10px;
+}
+
+#tabellen {margin-left:700px; margin-right:20px;
+           
+background-color: black;
+float:left;
+border: 1px solid black;
+}
+
+td {
+padding: 10px;
+width: 120px;
+text-align: center;
+}
+
+
+tr {background-color:grey;
+}
+
+body {color:white; background-image:url(../Model/url.jpg);
+}
+
+#summary {
+    margin-left: 770px;
+}
