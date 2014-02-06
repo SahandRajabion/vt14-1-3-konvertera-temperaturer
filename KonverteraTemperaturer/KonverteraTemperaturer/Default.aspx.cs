@@ -48,15 +48,18 @@ namespace KonverteraTemperaturer
                         new TableCell(), new TableCell()
                     };
 
-                    //Lägger slutligen till rader och kolumner efter vilka värden Row och arrayen Cell fått efter loopen.
+                    //Lägger slutligen till rader och kolumner efter vilka värden Row och Cell fått efter loopen.
                     tabel.Rows.Add(Row);
                     Row.Cells.AddRange(Cell);
 
 
+                    /*Anropar metoderna för själva uträkningen i Model->TemperatureConverter, och skriver ut resultatet i antingen vänster eller höger sida beroende på vilken 
+                    radioknapp som blir itryckt av användaren.*/
 
+                    Cell[0].Text = String.Format("{0}", i);
                     if (fTc.Checked)
                     {
-                        Cell[0].Text = String.Format("{0}", Model.TemperatureConverter.FahrenheitToCelsius(i));
+                        Cell[1].Text = String.Format("{0}", Model.TemperatureConverter.FahrenheitToCelsius(i));
                     }
                     else
                     {
@@ -64,21 +67,6 @@ namespace KonverteraTemperaturer
                     }
 
 
-
-
-
-
-
-
-
-                   /*
-                     Cell[0].Text = String.Format("{0}", i);
-                     Cell[1].Text = fTc.Checked ?
-                         String.Format("{0}", Model.TemperatureConverter.FahrenheitToCelsius(i)) :
-                         String.Format("{0}", Model.TemperatureConverter.CelsiusToFahrenheit(i));
-                    */
-
-                
                 }
 
             }
